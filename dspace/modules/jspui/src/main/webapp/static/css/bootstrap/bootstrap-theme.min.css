@@ -1746,6 +1746,7 @@ pre code {
   .col-md-10 {
     width: 83.33333333%;
   }
+  /* Caixa de texto: DSpace preserves and enables easy and open access to all types of digital content including text, images, moving images, mpegs and data sets..*/
   .col-md-9 {
     width: 75%;
   }
@@ -1761,6 +1762,8 @@ pre code {
   .col-md-5 {
     width: 41.66666667%;
   }
+/* Caixa de texto: This is a default installation of DSpace!
+It can be extensively configured by installing modified JSPs, and altering the site configuration.*/
   .col-md-4 {
     width: 33.33333333%;
   }
@@ -4531,6 +4534,7 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+/*Caixa texto central jumbotron*/
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
@@ -4574,7 +4578,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 21px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #ff0000;
   border: 1px solid #dddddd;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
