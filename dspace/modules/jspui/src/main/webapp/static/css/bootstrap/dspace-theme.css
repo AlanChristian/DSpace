@@ -36,6 +36,7 @@ span.ds-authority-confidence.cf-failed
 img.ds-authority-confidence.cf-notfound,
 span.ds-authority-confidence.cf-notfound
   { background-image: url(../../../image/confidence/3-thumb1.gif); }
+  
 img.ds-authority-confidence.cf-ambiguous,
 span.ds-authority-confidence.cf-ambiguous
   { background-image: url(../../../image/confidence/4-question.gif); }
