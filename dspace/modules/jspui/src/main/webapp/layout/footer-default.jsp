@@ -41,7 +41,7 @@
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
              <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
-                                    src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
+                                    src="<%= request.getContextPath() %>/image/ibict_logo_final.png"
                                     alt="Logo CINECA" /></a>
 			<div id="footer_feedback" class="pull-right">                                    
                                 <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
