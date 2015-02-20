@@ -41,7 +41,7 @@
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
              <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.ibict.br"><img
-                                    src="<%= request.getContextPath() %>/image/ibict_logo_final.png"
+                                    src="<%= request.getContextPath() %>/image/ibict_logo_final.gif"
                                     alt="Logo IBICT" /></a>
 			<div id="footer_feedback" class="pull-right">                                    
                                 <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
