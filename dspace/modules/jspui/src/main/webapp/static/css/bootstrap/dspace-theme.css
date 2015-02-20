@@ -210,7 +210,7 @@ input.ds-authority-lock.is-unlocked
 
 
 
-/** Div container da descrição do repositório **/
+/* Div container da descrição do repositório */
 .repo-description {
 	margin-left: 15px;
 	float: left;
@@ -219,9 +219,10 @@ input.ds-authority-lock.is-unlocked
 
 /** Cor de fundo do "jumbotron" **/
 .jumbotron {
-	
 	width: 1023px;
 	height: 71px;
+	background-color: #ffffff;
+	
 }
 
 /*.jumbotron h1 {
