@@ -219,26 +219,23 @@ input.ds-authority-lock.is-unlocked
 
 /** Cor de fundo do "jumbotron" **/
 .jumbotron {
-	/* background-color: #f1ffee; */
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.5;
-    margin-bottom: 5px;
-    padding: 10px;
+	
+	width: 1023px;
+	height: 71px;
 }
 
-.jumbotron h1 {
+/*.jumbotron h1 {
 	font-size: 20px;
 	font-weight: bold;
 }
-
+*/
 /** Cor do botão de busca **/
 .navbar-form  button, .search-button
 {
 	background-image: none;
 	/* border: #7aa97a; */
-/* 	background-color: #449d44;
-    border-color: #088a29; */
+	/*background-color: #449d44;*/
+    /*border-color: #088a29;*/
 }
 
 .addongreen .form-control
@@ -500,9 +497,9 @@ font-size: 40px;
 
 /** Aplica borda nas barras de navegação (topo e rodapé) **/
 .navbar {
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 
 /** Modifica fonte padrão do tema **/
