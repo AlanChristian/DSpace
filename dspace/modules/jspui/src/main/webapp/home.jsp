@@ -60,7 +60,7 @@
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
 	<div class="jumbotron">
-        <a href><img src="<%= request.getContextPath() %>/image/RIDI.jpg"
+        <a href><img src="<%= request.getContextPath() %>/image/Ridi2.jpg"
                                     alt="Logo RIDI" /></a>
 	</div>
 
@@ -123,8 +123,8 @@ if (submissions != null && submissions.count() > 0)
 		            displayAbstract = dcv[0].value;
 		        }
 		%>
-		    <div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
-		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= StringUtils.abbreviate(displayTitle, 400) %> 
+		    <div style="padding-bottom: 0px; min-height: 0px;" class="item <%= first?"active":""%>">
+		      <div style="padding-left: 0px; padding-right: 0px; display: inline-block;"><%= StringUtils.abbreviate(displayTitle, 400) %> 
 		      	<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
                         <p><%= StringUtils.abbreviate(displayAbstract, 500) %></p>
 		      </div>
@@ -153,9 +153,6 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-4">
-    <%= sideNews %>
-</div>
 </div>
 <div class="container row">
 <%
