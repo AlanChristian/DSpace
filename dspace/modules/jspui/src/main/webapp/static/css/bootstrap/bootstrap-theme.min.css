@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+	@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /*!
  * bootswatch v3.2.0
  * Homepage: http://bootswatch.com
@@ -1406,6 +1406,7 @@ pre code {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
+  padding-top: 40px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -4283,7 +4284,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 8px 15px;
   margin-bottom: 21px;
   list-style: none;
-  background-color: #43ac6a;
+  background-color: #000080;
   border-radius: 0;
 }
 .breadcrumb > li {
