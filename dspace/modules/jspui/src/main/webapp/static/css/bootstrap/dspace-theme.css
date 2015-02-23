@@ -89,18 +89,17 @@ input.ds-authority-lock.is-unlocked
 
 /** Topo **/
 .navbar-fixed-top {
-	/* background-color: #088A29; */
+	background-color: #27408B;
 	background-image: none;
 }
 
 /** Rodapé **/
 .navbar-bottom {
 	
-	/* background-color: #fff; */
+	background-color: #27408B;
 	background-image: none;
 	border-radius: 0;
-	/* border-top: 2px solid #006633; */
-    border-left: none;
+	border-left: none;
     border-right: none;
     border-bottom: none;
     padding-top: 3px;
@@ -127,25 +126,25 @@ input.ds-authority-lock.is-unlocked
 
 
 .navbar-inverse .navbar-nav > .active > a {
-	/* background-color: #006633;	 */
+	background-color: #4169E1;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    /* color: #fff; */
+    color: #fff;
 }
 
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-   /*  background-color: #449d44; */
+   background-color: #4169E1;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    /* background-color: #449d44; */
+    background-color: #4169E1;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    /* background-color: #449d44; */
-    /* background-image: linear-gradient(to bottom, #7aa97a 0px, #449d44 100%); */
+    background-color: #4169E1;
+    background-image: linear-gradient(to bottom, #4169E1 0px, #4169E1 100%);
     background-repeat: repeat-x;
 }
 
@@ -164,7 +163,7 @@ input.ds-authority-lock.is-unlocked
 }
 
 .panel-info > .panel-heading  {
-	    background-image: none;
+	background-image: none;
     /* background-color: #449d44; */
     background-repeat: repeat-x;
     border-bottom: none;
@@ -193,8 +192,8 @@ input.ds-authority-lock.is-unlocked
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-    background-color: #31B404;
-    border-color: #31B404;
+    background-color: #4169E1;
+    border-color: #4169E1;
 }
 
 /** Ícone do sistema junto a barra de navegação. **/
@@ -219,9 +218,11 @@ input.ds-authority-lock.is-unlocked
 
 /** Cor de fundo do "jumbotron" **/
 .jumbotron {
-	width: 1023px;
-	height: 71px;
+	width: 1027px;
+	height: 100px;
 	background-color: #ffffff;
+	padding-top: 10px;
+
 	
 }
 
@@ -235,8 +236,8 @@ input.ds-authority-lock.is-unlocked
 {
 	background-image: none;
 	/* border: #7aa97a; */
-	/*background-color: #449d44;*/
-    /*border-color: #088a29;*/
+	background-color: #27408B;
+    border-color: #27408B;
 }
 
 .addongreen .form-control
@@ -247,12 +248,12 @@ input.ds-authority-lock.is-unlocked
 .top-search-container {
 	padding-top: 40px;
 	padding-bottom: 40px; 
-	/* background-color: #f1ffee; */
+	background-color: #f1ffee;
 }
 
 /** Modifica cor dos links da busca facetada **/
 .list-group-item a .pull-right, .list-group-item  .pull-left {
-/* 	color: #0174DF; */
+ 	color: #0174DF;
 }
 
 /** Modifica estilo dos títulos da busca facetada **/
@@ -313,7 +314,7 @@ h4, .h4 {
 	position: relative;
 	margin: -5px auto 40px;
 	height: 350px;
-	border: 2px solid #f3f3f3;
+	border: 2px solid #ffffff;
 }
 
 
