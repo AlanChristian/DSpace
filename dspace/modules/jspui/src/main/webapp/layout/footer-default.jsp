@@ -41,8 +41,9 @@
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
              <div id="footer_feedback" class="pull-right">                                    
-                                <a href="http://www.ibict.br"><img
+                                <a href="<%= request.getContextPath() %>http://www.ibict.br"><img
                                     src="<%= request.getContextPath() %>/image/ibict-60.png"
+                                    alt="Logo IBICT" /></a>
                                 </div>
 			</div>
     </footer>
