@@ -60,7 +60,7 @@
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
 	<div class="jumbotron">
-        <a href><img src="<%= request.getContextPath() %>/image/Ridi2.jpg"
+        <a href><img src="<%= request.getContextPath() %>/image/Ridi222.png"
                                     alt="Logo RIDI" /></a>
 	</div>
 
