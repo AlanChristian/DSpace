@@ -13,7 +13,7 @@ ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
 #designedby {padding: 5px;}
-#footer_feedback {padding-top: 12px;}
+#footer_feedback {padding-top: 10px;}
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
 /* This magic gets the 16x16 icon to show up.. setting height/width didn't
@@ -102,7 +102,7 @@ input.ds-authority-lock.is-unlocked
 	border-left: none;
     border-right: none;
     border-bottom: none;
-    padding-top: 3px;
+    padding-top: 0px;
 }
 
 .panel-default > .panel-heading {
@@ -119,6 +119,8 @@ input.ds-authority-lock.is-unlocked
 }
 
 .footer-institution-data {
+	width: 179px;
+	height: 50px;
 	clear: both;
 	font-size: 10px;
 	text-align: left;
