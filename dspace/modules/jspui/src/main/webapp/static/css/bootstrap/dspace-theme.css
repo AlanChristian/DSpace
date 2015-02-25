@@ -216,7 +216,7 @@ input.ds-authority-lock.is-unlocked
 }
 
 
-/** Cor de fundo do "jumbotron" **/
+/** Cor de fundo do "jumbotron"
 .jumbotron {
 	width: 1027px;
 	height: 100px;
@@ -225,6 +225,16 @@ input.ds-authority-lock.is-unlocked
 
 	
 }
+**/
+
+.jumbotron {
+	width: 590px;
+	height: 210px;
+	background-color: #ffffff;
+	padding-top: 10px;
+	padding-left: 100px;	
+}
+
 
 /*.jumbotron h1 {
 	font-size: 20px;
