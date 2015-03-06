@@ -68,7 +68,7 @@
 				</a>
 			</div>
 			
-	<%--		
+			
 		<div class="col-md-12 searchbox">
 			<div class="col-md-11">
 		   		<input type="text" class="form-control " placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery-main-page" size="25"/>
@@ -77,7 +77,7 @@
 			   <button type="submit" class="btn btn-primary pull-right search-button"><span class="glyphicon glyphicon-search"></span></button>
 			</div>
 		</div>
-		--%>
+		
 		
 		</form>
 	</div>
