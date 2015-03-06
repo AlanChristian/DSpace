@@ -583,40 +583,40 @@ body {
 
 /** Faceta 0: Modifica cor de fundo da faceta **/
 .panel-success .color0 {
-	background-color: #00988a;
-	border-color: #005c54;
+	background-color: #27408B;
+	border-color: #27408B;
 }
 
 /** Faceta 1: Modifica cor da borda **/
 .colorborder1 {
-	border-color: #13abc5;
+	border-color: #27408B;
 }
 
 /** Faceta 1: Modifica cor da borda **/
 .colorborder1 a {
-	color: #13abc5;
+	color: #27408B;
 }
 
 /** Faceta 1: Modifica cor de fundo da faceta **/
 .panel-success .color1 {
-	background-color: #13abc5;
-	border-color: #047c91;
+	background-color: #191970;
+	border-color: #191970;
 }
 
 /** Faceta 2: Modifica cor da borda **/
 .colorborder2 {
-	border-color: #295c99;
+	border-color: #000080;
 }
 
 /** Faceta 2: Modifica cor da borda **/
 .colorborder2 a {
-	color: #295c99;
+	color: #000080;
 }
 
 /** Faceta 2: Modifica cor de fundo da faceta **/
 .panel-success .color2 {
-	background-color: #295c99;
-	border-color: #27405e;
+	background-color: #000080;
+	border-color: #000080;
 }
 
 /** Z-index do footer, para trás das caixas de seleção **/
