@@ -11,6 +11,8 @@
   - HTML header for main home page
   --%>
 
+<%@page import="java.util.Locale"%>
+<%@page import="org.dspace.core.I18nUtil"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
@@ -25,6 +27,7 @@
 <%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
 
 <%
+	Locale[] supportedLocales = I18nUtil.getSupportedLocales();
     String title = (String) request.getAttribute("dspace.layout.title");
     String navbar = (String) request.getAttribute("dspace.layout.navbar");
     boolean locbar = ((Boolean) request.getAttribute("dspace.layout.locbar")).booleanValue();
@@ -50,10 +53,12 @@
         <meta name="Generator" content="<%= generator %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.11.0.custom/jquery-ui.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+	    <link rel="stylesheet" href="<%= request.getContextPath() %>/reveal/reveal.css">	
+
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -79,10 +84,12 @@
         }
 %>
         
-	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/jquery/jquery-1.10.2.min.js"></script>
-	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
-	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/bootstrap/bootstrap.min.js'></script>
-	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/holder.js'></script>
+	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/jquery/jquery.js"></script>
+	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/jquery/jquery-ui-1.10.3.custom.min.js"></script>
+   	<script type="text/javascript" src="<%= request.getContextPath() %>/static/js/foundation/foundation.js"></script>
+   	<script type="text/javascript" src="<%= request.getContextPath() %>/static/js/foundation/foundation.reveal.js"></script>
+	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/bootstrap/bootstrap.min.js"></script>
+	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/holder.js"></script>
 	<script type="text/javascript" src="<%= request.getContextPath() %>/utils.js"></script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/choice-support.js"> </script>
 
