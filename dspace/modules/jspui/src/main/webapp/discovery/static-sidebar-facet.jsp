@@ -37,7 +37,7 @@
 	
 	boolean brefine = false;
 
-	int discovery_panel_cols = 4;
+	int discovery_panel_cols = 12;
 	int discovery_facet_cols = 4;
 	
 	Map<String, List<FacetResult>> mapFacetes = (Map<String, List<FacetResult>>) request.getAttribute("discovery.fresults");
