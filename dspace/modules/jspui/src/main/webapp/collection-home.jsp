@@ -41,6 +41,9 @@
 <%@ page import="org.dspace.eperson.Group"     %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 <%@ page import="java.net.URLEncoder" %>
+<%@ page import="org.apache.commons.lang.StringUtils"%>
+
+
 
 <%
     // Retrieve attributes
@@ -105,7 +108,7 @@
 <%@page import="org.dspace.app.webui.servlet.MyDSpaceServlet"%>
 <dspace:layout locbar="commLink" title="<%= name %>" feedData="<%= feedData %>">
     <div class="well">
-    <div class="row"><div class="col-md-8"><h2><%= name %>
+    <div class="row"><div class="col-md-12"><h2><%= name %>
 <%
             if(ConfigurationManager.getBooleanProperty("webui.strengths.show"))
             {
@@ -194,7 +197,7 @@
     	       width = 36;
     	    }
 %>
-    <a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/<%= collection.getHandle() %>"><img src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed" width="<%= width %>" height="15" style="margin: 3px 0 3px" /></a>
+    <a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/<%= collection.getHandle() %>"><img src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed" width="<%= width %>" height="15" vspace="3" border="0" /></a>
 <%
     	} %>
     	</span><%
@@ -233,7 +236,7 @@
     <%-- give us the top report on what we are looking at --%>
     <fmt:message var="bi_name" key="<%= bi_name_key %>"/>
     <fmt:message var="so_name" key="<%= so_name_key %>"/>
-    <div class="browse_range">
+    <div align="center" class="browse_range">
         <fmt:message key="jsp.collection-home.content.range">
             <fmt:param value="${bi_name}"/>
             <fmt:param value="${so_name}"/>
@@ -244,7 +247,7 @@
     </div>
 
     <%--  do the top previous and next page links --%>
-    <div class="prev-next-links">
+    <div align="center">
 <% 
       if (bi.hasPrevPage())
       {
@@ -279,7 +282,7 @@
 %>
 
     <%-- give us the bottom report on what we are looking at --%>
-    <div class="browse_range">
+    <div align="center" class="browse_range">
         <fmt:message key="jsp.collection-home.content.range">
             <fmt:param value="${bi_name}"/>
             <fmt:param value="${so_name}"/>
@@ -290,7 +293,7 @@
     </div>
 
     <%--  do the bottom previous and next page links --%>
-    <div class="prev-next-links">
+    <div align="center">
 <% 
       if (bi.hasPrevPage())
       {
@@ -387,11 +390,11 @@
 <%      } %>
 
     <%= sidebar %>
-    <%
+    <%--
     	int discovery_panel_cols = 12;
     	int discovery_facet_cols = 12;
-    %>
-    <%@ include file="discovery/static-sidebar-facet.jsp" %>
+    --%>
+	<%@ include file="discovery/static-sidebar-facet.jsp"  %>
   </dspace:sidebar>
 
 </dspace:layout>
