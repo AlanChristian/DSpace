@@ -89,14 +89,14 @@ input.ds-authority-lock.is-unlocked
 
 /** Topo **/
 .navbar-fixed-top {
-	background-color: #27408B;
+	background-color: #00679a;
 	background-image: none;
 }
 
 /** Rodapé **/
 .navbar-bottom {
 	
-	background-color: #27408B;
+	background-color: #00679a;
 	background-image: none;
 	border-radius: 0;
 	border-left: none;
@@ -248,8 +248,8 @@ input.ds-authority-lock.is-unlocked
 {
 	background-image: none;
 	/* border: #7aa97a; */
-	background-color: #27408B;
-    border-color: #27408B;
+	background-color: #00679a;
+    border-color: #00679a;
 }
 
 .addongreen .form-control
