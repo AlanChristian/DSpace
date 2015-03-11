@@ -64,15 +64,13 @@
 						
 			<div id="logo-deposita" class="col-md-11 text-center">
 				<a  id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
-					<img src="<%= request.getContextPath() %>/image/Ridi222.png" usemap="#mapa-brasil">		
+					<img src="<%= request.getContextPath() %>/image/Diadorim.png" usemap="#mapa-brasil">		
 				</a>
 			</div>
 			
 			
 		<div class="col-md-12 searchbox">
-			<div class="col-md-11">
-		   		<input type="text" class="form-control " placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery-main-page" size="25"/>
-			</div>				
+			<div class="col-md-11"><input type="text" class="form-control" placeholder="Buscar no Diretório"/></div>				
 			<div class="col-md-1">
 			   <button type="submit" class="btn btn-primary pull-right search-button"><span class="glyphicon glyphicon-search"></span></button>
 			</div>
@@ -84,8 +82,10 @@
 
 <div class="container row">
 
-    <% request.setAttribute("createRootDiv", false); %>
-	
-	<%@ include file="discovery/static-sidebar-facet.jsp" %>
+			<img src="<%= request.getContextPath() %>/image/RD.png">
+			<img src="<%= request.getContextPath() %>/image/Diretorio de revistas cientificas do Brasil.png"id= "Distancia">
+			<img src="<%= request.getContextPath() %>/image/BDTD.png"id= "Distancia">
+			<img src="<%= request.getContextPath() %>/image/diadorim logo.png"id= "Distancia2">
+			<img src="<%= request.getContextPath() %>/image/Riobaldo.png"id= "Distancia">
 </div>
 </dspace:layout>

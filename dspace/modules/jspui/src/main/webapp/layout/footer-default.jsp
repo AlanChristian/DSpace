@@ -29,7 +29,7 @@
 %>
 	</div>
 	<div class="col-md-3">
-                    <%= sidebar %>
+                 
     </div>
     </div>       
 <%
@@ -40,10 +40,12 @@
             <%-- Page footer --%>
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
+							 <img src="<%= request.getContextPath() %>/image/rss2.png">
+							 <img src="<%= request.getContextPath() %>/image/IBICTBranco.png" id="Distancia2">
+			
              <div id="footer_feedback" class="pull-right">                                    
-                                <a href="<%= request.getContextPath() %>http://www.ibict.br"><img
-                                    src="<%= request.getContextPath() %>/image/ibict-60.png"
-                                    alt="Logo IBICT" /></a>
+                                <img src="<%= request.getContextPath() %>/image/Contato.png">
+								
                                 </div>
 			</div>
     </footer>

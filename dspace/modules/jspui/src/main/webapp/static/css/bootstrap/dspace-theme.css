@@ -89,14 +89,14 @@ input.ds-authority-lock.is-unlocked
 
 /** Topo **/
 .navbar-fixed-top {
-	background-color: #00679a;
+	background-color: #3A5FCD;
 	background-image: none;
 }
 
 /** Rodapé **/
 .navbar-bottom {
 	
-	background-color: #00679a;
+	background-color: #3A5FCD;
 	background-image: none;
 	border-radius: 0;
 	border-left: none;
@@ -248,8 +248,8 @@ input.ds-authority-lock.is-unlocked
 {
 	background-image: none;
 	/* border: #7aa97a; */
-	background-color: #00679a;
-    border-color: #00679a;
+	background-color: #4169E1;
+    border-color: #4169E1;
 }
 
 .addongreen .form-control
@@ -523,7 +523,7 @@ body {
 
 /** Modifica fundo da caixa de busca da página inicial **/
 .searchbox {
-	background-color: #00679a;
+	background-color: #3A5FCD;
 	padding: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
