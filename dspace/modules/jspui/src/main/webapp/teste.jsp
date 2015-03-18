@@ -59,33 +59,11 @@
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
-	<div class="container">
-		<form method="get" action="<%= request.getContextPath() %>/simple-search" class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
-						
-			<div id="logo-deposita" class="col-md-11 text-center">
-				<a  id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
-					<img src="<%= request.getContextPath() %>/image/diadorimQ.png">		
-				</a>
-			</div>
-			
-			
-		<div class="col-md-12 searchbox">
-			<div class="col-md-11"><input type="text" class="form-control" placeholder="Buscar no Diretório"/></div>				
-			<div class="col-md-1">
-			   <button type="submit" class="btn btn-primary pull-right search-button"><span class="glyphicon glyphicon-search"></span></button>
-			</div>
-		</div>
-		
-		
-		</form>
-	</div>
+	<p align='center'><h2><strong><font color='CornflowerBlue'>Diadorim - Sistema de classificação das revistas</font></strong></h2></p>
+		<p align='justify'><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspO Diadorim é um serviço de informações relativas às autorizações concedidas para o armazenamento e o acesso dos artigos das revistas brasileiras em repositórios digitais de acesso aberto. Faz parte do conjunto de serviços de acesso aberto do Instituto Brasileiro de Informação em Ciência e Tecnologia. As informações aqui divulgadas são coletadas diretamente com os editores das revistas científicas brasileiras, a quem agradecemos pelo envio e atualização das informações.
+		<br><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspO objetivo deste serviço é identificar, sistematizar e disponibilizar as informações das políticas estabelecidas pelas editoras dos periódicos brasileiros referentes ao armazenamento dos artigos nos repositórios institucionais. Constitui-se em uma fonte de consulta importante para que autores e gestores de repositórios não descumpram o acordo de publicação estabelecido entre o autor e a revista, quando do arquivamento de artigos no repositório da instituição. Veja no item do menu "Permissão de depósito" os detalhes do sistema de classificação das revistas.
+		</p>
 
-<div class="container row">
-
-    <% request.setAttribute("createRootDiv", false); %>
-	
-	<%@ include file="discovery/static-sidebar-facet.jsp" %>
-	
-	
-</div>
 </dspace:layout>
