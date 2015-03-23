@@ -40,11 +40,12 @@
             <%-- Page footer --%>
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
-							 <img src="<%= request.getContextPath() %>/image/rss2.png">
-							 <img src="<%= request.getContextPath() %>/image/IBICTBranco.png" id="Distancia2">
+							 <img src="<%= request.getContextPath() %>/image/Finep.png">
+							 <img src="<%= request.getContextPath() %>/image/Abec.png">
+							 
 			
              <div id="footer_feedback" class="pull-right">                                    
-                                <img src="<%= request.getContextPath() %>/image/Contato.png">
+                                <img src="<%= request.getContextPath() %>/image/ibict-60.png">
 								
                                 </div>
 			</div>

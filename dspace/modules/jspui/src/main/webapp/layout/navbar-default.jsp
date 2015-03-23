@@ -83,7 +83,7 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/ibict1_normal.png" alt="DSpace logo" /></a>
+         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/LogoDiadorim.png" alt="DSpace logo" /></a>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
@@ -94,7 +94,7 @@
              <ul class="dropdown-menu">
                <li><a href="<%= request.getContextPath() %>/community-list"><fmt:message key="jsp.layout.navbar-default.communities-collections"/></a></li>
 				<li class="divider"></li>
-        <li class="dropdown-header"><fmt:message key="jsp.layout.navbar-default.browseitemsby"/></li>
+				<li class="dropdown-header"><fmt:message key="jsp.layout.navbar-default.browseitemsby"/></li>
 				<%-- Insert the dynamic browse indices here --%>
 				
 				<%
@@ -104,16 +104,24 @@
 						String key = "browse.menu." + bix.getName();
 					%>
 				      			<li><a href="<%= request.getContextPath() %>/browse?type=<%= bix.getName() %>"><fmt:message key="<%= key %>"/></a></li>
+								
 					<%	
 					}
 				%>
 				    
 				<%-- End of dynamic browse indices --%>
 
-            </ul>
+      </ul>
           </li>
-          <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
-       </ul>
+          <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup>
+		  </li>
+		  <li class="<%= currentPage.endsWith("/teste")? "active" : "" %>"><a href="<%= request.getContextPath() %>/teste.jsp">Sobre o Diadorim</a></li>
+		  <li class="<%= currentPage.endsWith("/Documentos")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Documentos.jsp">Documentos Úteis</a></li>
+		  <li class="<%= currentPage.endsWith("/links")? "active" : "" %>"><a href="<%= request.getContextPath() %>/links.jsp">Links</a></li>
+		  <li class="<%= currentPage.endsWith("/Perguntas")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Perguntas.jsp">Perguntas Frequentes</a></li>
+		  <li class="<%= currentPage.endsWith("/Contato")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Contato.jsp">Contato</a></li>
+
+	  </ul>
 
  <% if (supportedLocales != null && supportedLocales.length > 1)
      {
@@ -137,6 +145,7 @@
      }
  %>
      </ul>
+	 
     </li>
     </ul>
   </div>
@@ -144,7 +153,7 @@
    }
  %>
  
-       <div class="nav navbar-nav navbar-right">
+    <div class="nav navbar-nav navbar-right">
 		<ul class="nav navbar-nav navbar-right">
          <li class="dropdown">
          <%
@@ -180,20 +189,6 @@
            </li>
           </ul>
           
-	<%-- Search Box --%>
-	<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right">
-	    <div class="form-group">
-          <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
-        </div>
-        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-<%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
-<%
-			if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
-			{
-%>        
-              <br/><a href="<%= request.getContextPath() %>/subject-search"><fmt:message key="jsp.layout.navbar-default.subjectsearch"/></a>
-<%
-            }
-%> --%>
-	</form></div>
+	</div>
+	
     </nav>
