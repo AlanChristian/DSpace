@@ -122,11 +122,7 @@
 	<h2>
 		<fmt:message key="browse.single.header"><fmt:param value="<%= scope %>"/></fmt:message> <fmt:message key="<%= typeKey %>"/>
 	</h2>
-	
-<%
-	if (!bix.isTagCloudEnabled())
-	{
-%>
+
 	<%-- Include the main navigation for all the browse pages --%>
 	<%-- This first part is where we render the standard bits required by both possibly navigations --%>
 	<div id="browse_navigation" class="well text-center">
@@ -315,15 +311,5 @@
 	<%-- 
 	<!-- <%= bi.toString() %> -->
     --%>
-<%
-	}
-	else {
-	
-%>
-<div class="row" style="overflow:hidden">
-	<%@ include file="static-tagcloud-browse.jsp" %>
-</div>
-<%
-	}
-%>
+    
 </dspace:layout>

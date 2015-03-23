@@ -40,8 +40,10 @@
 <%
     Community[] communities = (Community[]) request.getAttribute("communities");
 
+    Locale[] supportedLocales = I18nUtil.getSupportedLocales();
     Locale sessionLocale = UIUtil.getSessionLocale(request);
     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
+    String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html"));
     String sideNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-side.html"));
 
     boolean feedEnabled = ConfigurationManager.getBooleanProperty("webui.feed.enable");
@@ -63,14 +65,16 @@
 		<form method="get" action="<%= request.getContextPath() %>/simple-search" class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
 						
 			<div id="logo-deposita" class="col-md-11 text-center">
-				<a  id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
-					<img src="<%= request.getContextPath() %>/image/diadorimQ.png">		
+				<a  id="link-logo-deposita" href="<%= request.getContextPath() %>/home.jsp">
+					<img src="<%= request.getContextPath() %>/image/diadorimQ.png" usemap="#mapa-brasil">		
 				</a>
 			</div>
 			
-		<br>	
+			
 		<div class="col-md-12 searchbox">
-			<div class="col-md-11"><input type="text" class="form-control" placeholder="Buscar no Diretório"/></div>				
+			<div class="col-md-11">
+		   		<input type="text" class="form-control " placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery-main-page" size="25"/>
+			</div>				
 			<div class="col-md-1">
 			   <button type="submit" class="btn btn-primary pull-right search-button"><span class="glyphicon glyphicon-search"></span></button>
 			</div>
@@ -85,7 +89,5 @@
     <% request.setAttribute("createRootDiv", false); %>
 	
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
-	
-	
 </div>
 </dspace:layout>

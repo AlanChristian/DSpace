@@ -56,9 +56,22 @@
 
 
        <div class="navbar-header">
-         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/ibict1_normal.png" alt="DSpace logo" /></a>
+         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/LogoDiadorim.png" alt="Diadorim logo" /></a>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		<ul class="nav navbar-nav">
+			<li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
+			<li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
+			 </li>
+			 <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup>
+		  </li>
+		  <li class="<%= currentPage.endsWith("/teste")? "active" : "" %>"><a href="<%= request.getContextPath() %>/teste.jsp">Sobre o Diadorim</a></li>
+		  <li class="<%= currentPage.endsWith("/Documentos")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Documentos.jsp">Documentos Úteis</a></li>
+		  <li class="<%= currentPage.endsWith("/links")? "active" : "" %>"><a href="<%= request.getContextPath() %>/links.jsp">Links</a></li>
+		  <li class="<%= currentPage.endsWith("/Perguntas")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Perguntas.jsp">Perguntas Frequentes</a></li>
+		  <li class="<%= currentPage.endsWith("/Contato")? "active" : "" %>"><a href="<%= request.getContextPath() %>/Contato.jsp">Contato</a></li>
+		</ul>
        <div class="nav navbar-nav navbar-right">
 		<ul class="nav navbar-nav navbar-right">
          <li class="dropdown">

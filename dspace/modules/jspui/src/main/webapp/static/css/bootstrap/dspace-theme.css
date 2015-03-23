@@ -13,14 +13,14 @@ ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
 #designedby {padding: 5px;}
-#footer_feedback {padding-top: 10px;}
+#footer_feedback {padding-top: 12px;}
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
 /* This magic gets the 16x16 icon to show up.. setting height/width didn't
    do it, but adding padding actually made it show up. */
 img.ds-authority-confidence,
 span.ds-authority-confidence
-{ width: 160px; height: 16px; margin: 5px; background-repeat: no-repeat;
+{ width: 16px; height: 16px; margin: 5px; background-repeat: no-repeat;
   padding: 0px 2px; vertical-align: bottom; color: transparent;}
 img.ds-authority-confidence.cf-unset,
 span.ds-authority-confidence.cf-unset
@@ -89,20 +89,20 @@ input.ds-authority-lock.is-unlocked
 
 /** Topo **/
 .navbar-fixed-top {
-	background-color: #3A5FCD;
+	background-color: #4682B4;
 	background-image: none;
 }
 
 /** Rodapé **/
 .navbar-bottom {
 	
-	background-color: #3A5FCD;
+	background-color: #4682B4;
 	background-image: none;
 	border-radius: 0;
 	border-left: none;
     border-right: none;
     border-bottom: none;
-    padding-top: 0px;
+    padding-top: 3px;
 }
 
 .panel-default > .panel-heading {
@@ -119,8 +119,7 @@ input.ds-authority-lock.is-unlocked
 }
 
 .footer-institution-data {
-	width: 179px;
-	height: 50px;
+
 	clear: both;
 	font-size: 10px;
 	text-align: left;
@@ -128,7 +127,7 @@ input.ds-authority-lock.is-unlocked
 
 
 .navbar-inverse .navbar-nav > .active > a {
-	background-color: #4169E1;
+	background-color: #006687;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -137,16 +136,16 @@ input.ds-authority-lock.is-unlocked
 
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-   background-color: #4169E1;
+   background-color: #006687;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #4169E1;
+    background-color: #006687;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background-color: #4169E1;
-    background-image: linear-gradient(to bottom, #4169E1 0px, #4169E1 100%);
+    background-color: #006687;
+    background-image: linear-gradient(to bottom, #006687 0px, #006687 100%);
     background-repeat: repeat-x;
 }
 
@@ -194,8 +193,8 @@ input.ds-authority-lock.is-unlocked
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-    background-color: #4169E1;
-    border-color: #4169E1;
+    background-color: #006687;
+    border-color: #006687;
 }
 
 /** Ícone do sistema junto a barra de navegação. **/
@@ -218,7 +217,7 @@ input.ds-authority-lock.is-unlocked
 }
 
 
-/** Cor de fundo do "jumbotron"
+/** Cor de fundo do "jumbotron"**/
 .jumbotron {
 	width: 1027px;
 	height: 100px;
@@ -227,18 +226,9 @@ input.ds-authority-lock.is-unlocked
 
 	
 }
-**/
-
-.jumbotron {
-	width: 590px;
-	height: 210px;
-	background-color: #ffffff;
-	padding-top: 10px;
-	padding-left: 100px;	
-}
 
 
-/*.jumbotron h1 {
+.jumbotron h1 {
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -248,8 +238,8 @@ input.ds-authority-lock.is-unlocked
 {
 	background-image: none;
 	/* border: #7aa97a; */
-	background-color: #4169E1;
-    border-color: #4169E1;
+	background-color: #006687;
+    border-color: #006687;
 }
 
 .addongreen .form-control
@@ -484,7 +474,7 @@ table img[src*="/retrieve/"] {
 /* Ajuste de tamanho dos títulos */
 
 h1, .h1 {
-font-size: 20x;
+font-size: 20px;
 }
 
 /* Ajuste de tamanho da descrição do repositório */
@@ -523,7 +513,7 @@ body {
 
 /** Modifica fundo da caixa de busca da página inicial **/
 .searchbox {
-	background-color: #3A5FCD;
+	background-color: #4682B4;
 	padding: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -573,50 +563,50 @@ body {
 
 /** Faceta 0: Modifica cor da borda **/
 .colorborder0 {
-	border-color: #00988a;
+	border-color: #006687;
 }
 
 /** Faceta 0: Modifica cor dos links da faceta **/
 .colorborder0 a {
-	color: #00988a;
+	color: #006687;
 }
 
 /** Faceta 0: Modifica cor de fundo da faceta **/
 .panel-success .color0 {
-	background-color: #27408B;
-	border-color: #27408B;
+	background-color: #006687;
+	border-color: #006687;
 }
 
 /** Faceta 1: Modifica cor da borda **/
 .colorborder1 {
-	border-color: #27408B;
+	border-color: #006687;
 }
 
 /** Faceta 1: Modifica cor da borda **/
 .colorborder1 a {
-	color: #27408B;
+	color: #006687;
 }
 
 /** Faceta 1: Modifica cor de fundo da faceta **/
 .panel-success .color1 {
-	background-color: #191970;
-	border-color: #191970;
+	background-color: #006687;
+	border-color: #006687;
 }
 
 /** Faceta 2: Modifica cor da borda **/
 .colorborder2 {
-	border-color: #000080;
+	border-color: #4682B4;
 }
 
 /** Faceta 2: Modifica cor da borda **/
 .colorborder2 a {
-	color: #000080;
+	color: #4682B4;
 }
 
 /** Faceta 2: Modifica cor de fundo da faceta **/
 .panel-success .color2 {
-	background-color: #000080;
-	border-color: #000080;
+	background-color: #4682B4;
+	border-color: #4682B4;
 }
 
 /** Z-index do footer, para trás das caixas de seleção **/

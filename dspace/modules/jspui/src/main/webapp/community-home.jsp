@@ -147,13 +147,6 @@
     <% request.setAttribute("createRootDiv", true); %>
 	<%@ include file="discovery/static-sidebar-facet.jsp"  %>
 </div>
-
-
-<div class="row">
-	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
-</div>
-	
-
 <div class="row">
 <%
 	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.community-home.logos", true);

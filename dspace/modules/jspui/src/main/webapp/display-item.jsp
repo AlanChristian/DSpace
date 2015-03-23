@@ -30,7 +30,7 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
 <%@ page import="org.dspace.content.Collection" %>
-<%@ page import="org.dspace.content.Metadatum" %>
+<%@ page import="org.dspace.content.DCValue" %>
 <%@ page import="org.dspace.content.Item" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
 <%@ page import="org.dspace.handle.HandleManager" %>
@@ -45,6 +45,7 @@
 <%@page import="org.dspace.core.Constants"%>
 <%@page import="org.dspace.eperson.EPerson"%>
 <%@page import="org.dspace.versioning.VersionHistory"%>
+<%@page import="org.elasticsearch.common.trove.strategy.HashingStrategy"%>
 <%
     // Attributes
     Boolean displayAllBoolean = (Boolean) request.getAttribute("display.all");
@@ -74,7 +75,7 @@
 	}
 	else 
 	{
-		Metadatum[] titleValue = item.getDC("title", null, Item.ANY);
+		DCValue[] titleValue = item.getDC("title", null, Item.ANY);
 		if (titleValue.length != 0)
 		{
 			title = titleValue[0].value;

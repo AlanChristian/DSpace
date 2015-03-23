@@ -205,10 +205,6 @@
 %>
         </form>
 
-<div class="row">
-	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
-</div>
-
 <% if (show_items)
    {
         BrowseInfo bi = (BrowseInfo) request.getAttribute("browse.info");
@@ -374,7 +370,7 @@
 		Item[] items = rs.getRecentSubmissions();
 		for (int i = 0; i < items.length; i++)
 		{
-			Metadatum[] dcv = items[i].getMetadata("dc", "title", null, Item.ANY);
+			DCValue[] dcv = items[i].getMetadata("dc", "title", null, Item.ANY);
 			String displayTitle = "Untitled";
 			if (dcv != null)
 			{
