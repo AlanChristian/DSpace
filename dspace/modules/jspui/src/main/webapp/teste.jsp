@@ -34,7 +34,7 @@
 <%@ page import="org.dspace.core.ConfigurationManager" %>
 <%@ page import="org.dspace.core.NewsManager" %>
 <%@ page import="org.dspace.browse.ItemCounter" %>
-<%@ page import="org.dspace.content.Metadatum" %>
+<%@ page import="org.dspace.content.DCValue" %>
 <%@ page import="org.dspace.content.Item" %>
 
 <%
@@ -59,11 +59,15 @@
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
-	<p align='center'><h2><strong><font color='CornflowerBlue'>Diadorim - Sistema de classificação das revistas</font></strong></h2></p>
+<div>
+	<h1><p><strong><font color='CornflowerBlue'>Diadorim</font></strong></p></h1>
+	
+	<p align='center'><h2><strong><font color='RoyalBlue '>Sistema de classificação das revistas</font></strong></h2></p>
+	
 		<p align='justify'><br>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspO Diadorim é um serviço de informações relativas às autorizações concedidas para o armazenamento e o acesso dos artigos das revistas brasileiras em repositórios digitais de acesso aberto. Faz parte do conjunto de serviços de acesso aberto do Instituto Brasileiro de Informação em Ciência e Tecnologia. As informações aqui divulgadas são coletadas diretamente com os editores das revistas científicas brasileiras, a quem agradecemos pelo envio e atualização das informações.
 		<br><br>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspO objetivo deste serviço é identificar, sistematizar e disponibilizar as informações das políticas estabelecidas pelas editoras dos periódicos brasileiros referentes ao armazenamento dos artigos nos repositórios institucionais. Constitui-se em uma fonte de consulta importante para que autores e gestores de repositórios não descumpram o acordo de publicação estabelecido entre o autor e a revista, quando do arquivamento de artigos no repositório da instituição. Veja no item do menu "Permissão de depósito" os detalhes do sistema de classificação das revistas.
 		</p>
-
+</div>
 </dspace:layout>

@@ -34,7 +34,7 @@
 <%@ page import="org.dspace.core.ConfigurationManager" %>
 <%@ page import="org.dspace.core.NewsManager" %>
 <%@ page import="org.dspace.browse.ItemCounter" %>
-<%@ page import="org.dspace.content.Metadatum" %>
+<%@ page import="org.dspace.content.DCValue" %>
 <%@ page import="org.dspace.content.Item" %>
 
 <%
@@ -68,7 +68,7 @@
 				</a>
 			</div>
 			
-			
+		<br>	
 		<div class="col-md-12 searchbox">
 			<div class="col-md-11"><input type="text" class="form-control" placeholder="Buscar no Diretório"/></div>				
 			<div class="col-md-1">
