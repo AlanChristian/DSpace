@@ -128,8 +128,8 @@
 
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
-    <body class="undernavigation">
-<a class="sr-only" href="#content">Skip navigation</a>
+    
+
 <header class="navbar navbar-inverse navbar-fixed-top">    
     <%
     if (!navbar.equals("off"))
@@ -150,7 +150,8 @@
     }
 %>
 </header>
-
+<body class="undernavigation">
+<a class="sr-only" href="#content">Skip navigation</a>
 <main id="content" role="main">
 <br/>
                 <%-- Location bar --%>
