@@ -47,6 +47,7 @@
 
     // E-mail may have to be truncated
     String navbarEmail = null;
+	BrowseIndex[] bis = BrowseIndex.getBrowseIndices();
 
     if (user != null)
     {
@@ -63,7 +64,28 @@
 			<li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
 			<li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
-			 </li>
+             <ul class="dropdown-menu">
+               <li><a href="<%= request.getContextPath() %>/community-list"><fmt:message key="jsp.layout.navbar-default.communities-collections"/></a></li>
+				<li class="divider"></li>
+				<li class="dropdown-header"><fmt:message key="jsp.layout.navbar-default.browseitemsby"/></li>
+				<%-- Insert the dynamic browse indices here --%>
+				
+				<%
+					for (int i = 0; i < bis.length; i++)
+					{
+						BrowseIndex bix = bis[i];
+						String key = "browse.menu." + bix.getName();
+					%>
+				      			<li><a href="<%= request.getContextPath() %>/browse?type=<%= bix.getName() %>"><fmt:message key="<%= key %>"/></a></li>
+								
+					<%	
+					}
+				%>
+				    
+				<%-- End of dynamic browse indices --%>
+
+      </ul>
+          </li>
 			 <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup>
 		  </li>
 		  <li class="<%= currentPage.endsWith("/teste")? "active" : "" %>"><a href="<%= request.getContextPath() %>/teste.jsp">Sobre o Diadorim</a></li>
